@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 /*Aula 01 - 01/04/2023 */ 
 
 body, ul {
@@ -7,10 +8,11 @@ body, ul {
 #header #menu a {
     color: black;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Roboto Mono';
     text-transform: uppercase;
     font-size: 1.25em;
     transition: 0.3s;
+    margin-right: 10px;
 }
 #header #menu a:hover {
     color: rgba(2, 2, 170, 0.596);
@@ -30,11 +32,12 @@ body, ul {
     position: relative;
     top: 0px;
     left: 0px;
+    border-radius: 200px; /*criar borda circular na imagem*/
 
 }
 #header {
 width: 100%;
-position: fixed;
+position: relative;
 z-index: 90;
 box-sizing: border-box;
 height: 70px;
@@ -43,7 +46,9 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 background: #e7e7e7;
-
+box-shadow: 6px 6px 8px #0000007a;
+transition: 0.3s;
+margin-block: 0;
 }
 #menu { 
     display: flex;
@@ -54,8 +59,179 @@ background: #e7e7e7;
 #btn-mobile { 
     display: none;
 }
+/*
 #carouselExampleInterval { 
     position: relative;
     z-index: 10;
     padding-top: 80px;
 }
+*/
+
+
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    margin-left: 10px;
+    margin-right:10px;
+    box-shadow: 6px 6px 8px black;
+    transition: 0.3s;
+    place-items: normal legacy;
+    margin-block: 10px;
+    height: auto;
+}
+
+#carouselExampleInterval .carousel-inner img { 
+    max-height: 800px;
+    width: 100%;
+}
+
+/* Estilo CSS Banner */
+.section-banner-home {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    padding: 50px;
+    background-color: powderblue;
+}
+.section-banner-home img {
+    height: 400px;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: white;
+}
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+.section-banner-home .texto-banner a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: powderblue;
+    padding: 4px 14px;
+    font-size: 15px;
+}
+.section-banner-home .texto-banner a:hover {
+    color: rgb(14, 221, 100);
+    text-shadow: 2px 2px 4px grey;
+    font-size: 18px;
+    font-weight: bold;
+
+ }
+
+/* Fim CSS Banner */
+
+/* CSS Destaque */
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #30dcf4;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+/* Fim CSS Destaque */
+
+/*CSS novidades */
+
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+
+}
+
+.novidades h2 {
+    color: black;
+    font-size: 26px;
+    width: 70%;
+}
+
+.novidades p {
+    color: rgb(0, 0, 0);
+}
+
+-novidades a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-color: violet;
+    padding: 6px 12px;
+    background-color: rgb(0, 68, 194);
+    font-weight: 400;
+}
+
+/*Fim CSS novidades*/
+
+/* Início CSS Galerias */
+
+.galeria {
+    margin: 60px auto 20px;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+/*Início CSS Footer*/
+
+.rodapé {
+    padding: 50px 50px 0;
+}
+.rodapé .info-contato p {
+    margin: 0px;
+}
+.rodapé a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
+.rodapé a:hover {
+    font-weight: bold;
+}
+.rodapé .redes-sociais img {
+    width: 45px;
+    height: 40px;
+}
+.rodapé p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+
